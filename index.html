@@ -9,7 +9,7 @@
 	Total Credits Cleared: <input type="number" name="tpastcredits" id="tpastcredits">
 	</form>
 	<form name="Expected">
-		         <table>
+		          <table>
 				  <tr>
 				    <th></th>
 				    <th>Grade</th>
@@ -75,47 +75,43 @@
 				    <td><input type="number" name="sub12grade" id="sub12grade"></td>
 				    <td><input type="number" name="sub12credits" id="sub12credits"></td>
 				  </tr>
-				</table>		
-	</form>
+				</table>
 	<form>
 		<input type="Submit" name="Submit!" onclick="cg()">
 	</form>
 	<script type="text/javascript"> 
 		function cg() {
-			var currentCG = document.getElementById('current_cg').value;
-		var tcredits =  document.getElementById("tpastcredits").value;
-		var sub1grade = document.getElementById("sub1grade").value;
-		var sub1credits = document.getElementById("sub1credits").value;
-		var sub2grade = document.getElementById("sub2grade").value;
-		var sub2credits = document.getElementById("sub2credits").value;
-		var sub3grade = document.getElementById("sub3grade").value;
-		var sub3credits = document.getElementById("sub3credits").value;
-		var sub4grade = document.getElementById("sub4grade").value;
-		var sub4credits = document.getElementById("sub4credits").value;
-		var sub5grade = document.getElementById("sub5grade").value;
-		var sub5credits = document.getElementById("sub5credits").value;
-		var sub6grade = document.getElementById("sub6grade").value;
-		var sub6credits = document.getElementById("sub6credits").value;
-		var sub7grade = document.getElementById("sub7grade").value;
-		var sub7credits = document.getElementById("sub7credits").value;
-		var sub8grade = document.getElementById("sub8grade").value;
-		var sub8credits = document.getElementById("sub8credits").value;
-		var sub9grade = document.getElementById("sub9grade").value;
-		var sub9credits = document.getElementById("sub9credits").value;
-		var sub10grade = document.getElementById("sub10grade").value;
-		var sub10credits = document.getElementById("sub10credits").value;
-		var sub11grade = document.getElementById("sub11grade").value;
-		var sub11credits = document.getElementById("sub11credits").value;
-		var sub12grade = document.getElementById("sub12grade").value;
-		var sub12credits = document.getElementById("sub12credits").value;
-		//document.write(sub1credits);
+			var currentCG = document.PresentCG.current_cg.value;
+			var tcredits =  document.PresentCG.tpastcredits.value;
+			var sub1grade = document.Expected.sub1grade.value;
+			var sub1credits = document.Expected.sub1credits.value;
+			var sub2grade = document.Expected.sub2grade.value;
+			var sub2credits = document.Expected.sub2credits.value;
+			var sub3grade = document.Expected.sub3grade.value;
+			var sub3credits = document.Expected.sub3credits.value;
+			var sub4grade = document.Expected.sub4grade.value;
+			var sub4credits = document.Expected.sub4credits.value;
+			var sub5grade = document.Expected.sub5grade.value;
+			var sub5credits = document.Expected.sub5credits.value;
+			var sub6grade = document.Expected.sub6grade.value;
+			var sub6credits = document.Expected.sub6credits.value;
+			var sub7grade = document.Expected.sub7grade.value;
+			var sub7credits = document.Expected.sub7credits.value;
+			var sub8grade = document.Expected.sub8grade.value;
+			var sub8credits = document.Expected.sub8credits.value;
+			var sub9grade = document.Expected.sub9grade.value;
+			var sub9credits = document.Expected.sub9credits.value;
+			var sub10grade = document.Expected.sub10grade.value;
+			var sub10credits = document.Expected.sub10credits.value;
+			var sub11grade = document.Expected.sub11grade.value;
+			var sub11credits = document.Expected.sub11credits.value;
+			var sub12grade = document.Expected.sub12grade.value;
+			var sub12credits = document.Expected.sub12credits.value;
 		 var Totalcredits = tcredits+sub1credits+sub2credits+sub3credits+sub4credits+sub5credits+sub6credits+sub7credits+sub8credits+sub9credits+sub10credits+sub11credits+sub12credits;
-		 var weightedcredits = currentCG*tcredits + sub1grade*sub1credits+ sub2grade*sub2credits+sub3grade*sub3credits+sub4grade*sub4credits+sub5grade*sub5credits+sub6grade*sub6credits+sub7grade*sub7credits+sub8grade*sub8credits+sub9grade*sub9credits+sub10grade*sub10credits+sub11grade*sub11credits+sub12grade*sub12credits;
+		 var weightedcredits = (currentCG*tcredits) + (sub1grade*sub1credits)+ (sub2grade*sub2credits) +(sub3grade*sub3credits)+(sub4grade*sub4credits)+sub5grade*sub5credits+sub6grade*sub6credits+sub7grade*sub7credits+sub8grade*sub8credits+sub9grade*sub9credits+sub10grade*sub10credits+sub11grade*sub11credits+sub12grade*sub12credits;
 		 var expected_cg = weightedcredits/Totalcredits;
-		// alert('Your Expected CGPA is ' + currentCG);
-		//document.write(expected_cg);
+		 alert('Your Expected CGPA is ' + expected_cg);
 		}
-		
 	</script>
 </body>
 </html>

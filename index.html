@@ -5,8 +5,8 @@
 </head>
 <body>
 <form name="PresentCG">
-	Current CGPA: <input type="number" step="any" name="current_cg">
-	Total Credits Cleared: <input type="number" name="tpastcredits">
+	Current CGPA: <input type="number" step="any" name="current_cg" id="current_cg">
+	Total Credits Cleared: <input type="number" name="tpastcredits" id="tpastcredits">
 	</form>
 	<form name="Expected">
 		         <table>
@@ -17,68 +17,105 @@
 				  </tr>
 				  <tr>
 				    <td>SUBJECT 1</td>
-				    <td><input type="number" name="sub1grade"></td>
-				    <td><input type="number" name="sub1credits"></td>
+				    <td><input type="number" name="sub1grade" id="sub1grade"></td>
+				    <td><input type="number" name="sub1credits" id="sub1credits"></td>
 				  </tr>
 				  <tr>
 				    <td>SUBJECT 2</td>
-				    <td><input type="number" name="sub2grade"></td>
-				    <td><input type="number" name="sub2credits"></td>
+				    <td><input type="number" name="sub2grade" id="sub2grade"></td>
+				    <td><input type="number" name="sub2credits" id="sub2credits"></td>
 				  </tr>
 				  <tr>
 				    <td>SUBJECT 3</td>
-				    <td><input type="number" name="sub3grade"></td>
-				    <td><input type="number" name="sub3credits"></td>
+				    <td><input type="number" name="sub3grade" id="sub3grade" ></td>
+				    <td><input type="number" name="sub3credits" id="sub3credits"></td>
 				  </tr>
 				  <tr>
 				    <td>SUBJECT 4</td>
-				    <td><input type="number" name="sub4grade"></td>
-				    <td><input type="number" name="sub4credits"></td>
+				    <td><input type="number" name="sub4grade" id="sub4grade"></td>
+				    <td><input type="number" name="sub4credits" id="sub4credits"></td>
 				  </tr>
 				  <tr>
 				    <td>SUBJECT 5</td>
-				    <td><input type="number" name="sub5grade"></td>
-				    <td><input type="number" name="sub5credits"></td>
+				    <td><input type="number" name="sub5grade" id="sub5grade"></td>
+				    <td><input type="number" name="sub5credits" id="sub5credits"></td>
 				  </tr>
 				  <tr>
 				    <td>SUBJECT 6</td>
 				    <td><input type="number" name="sub6grade"></td>
-				    <td><input type="number" name="sub6credits"></td>
+				    <td><input type="number" name="sub6credits" id="sub6credits"></td>
 				  </tr>
 				  <tr>
 				    <td>SUBJECT 7</td>
-				    <td><input type="number" name="sub7grade"></td>
-				    <td><input type="number" name="sub7credits"></td>
+				    <td><input type="number" name="sub7grade" id="sub7grade"></td>
+				    <td><input type="number" name="sub7credits" id="sub7credits"></td>
 				  </tr>
 				  <tr>
 				    <td>SUBJECT 8</td>
-				    <td><input type="number" name="sub8grade"></td>
-				    <td><input type="number" name="sub8credits"></td>
+				    <td><input type="number" name="sub8grade" id="sub8grade"></td>
+				    <td><input type="number" name="sub8credits" id="sub8credits"></td>
 				  </tr>
 				  <tr>
 				    <td>SUBJECT 9</td>
-				    <td><input type="number" name="sub9grade"></td>
-				    <td><input type="number" name="sub9credits"></td>
+				    <td><input type="number" name="sub9grade" id="sub9grade"></td>
+				    <td><input type="number" name="sub9credits" id="sub9credits"></td>
 				  </tr>
 				  <tr>
 				    <td>SUBJECT 10</td>
-				    <td><input type="number" name="sub10grade"></td>
-				    <td><input type="number" name="sub10credits"></td>
+				    <td><input type="number" name="sub10grade" id="sub10grade"></td>
+				    <td><input type="number" name="sub10credits" id="sub10credits"></td>
 				  </tr>
 				  <tr>
 				    <td>SUBJECT 11</td>
-				    <td><input type="number" name="sub11grade"></td>
-				    <td><input type="number" name="sub11credits"></td>
+				    <td><input type="number" name="sub11grade" id="sub11grade"></td>
+				    <td><input type="number" name="sub11credits" id="sub11credits"></td>
 				  </tr>
 				  <tr>
 				    <td>SUBJECT 12</td>
-				    <td><input type="number" name="sub12grade"></td>
-				    <td><input type="number" name="sub12credits"></td>
+				    <td><input type="number" name="sub12grade" id="sub12grade"></td>
+				    <td><input type="number" name="sub12credits" id="sub12credits"></td>
 				  </tr>
 				</table>		
 	</form>
 	<form>
-		<input type="Submit" name="Submit!">
+		<input type="Submit" name="Submit!" onclick="cg()">
 	</form>
+	<script type="text/javascript"> 
+		function cg() {
+			var currentCG = document.getElementById('current_cg').value;
+		var tcredits =  document.getElementById("tpastcredits").value;
+		var sub1grade = document.getElementById("sub1grade").value;
+		var sub1credits = document.getElementById("sub1credits").value;
+		var sub2grade = document.getElementById("sub2grade").value;
+		var sub2credits = document.getElementById("sub2credits").value;
+		var sub3grade = document.getElementById("sub3grade").value;
+		var sub3credits = document.getElementById("sub3credits").value;
+		var sub4grade = document.getElementById("sub4grade").value;
+		var sub4credits = document.getElementById("sub4credits").value;
+		var sub5grade = document.getElementById("sub5grade").value;
+		var sub5credits = document.getElementById("sub5credits").value;
+		var sub6grade = document.getElementById("sub6grade").value;
+		var sub6credits = document.getElementById("sub6credits").value;
+		var sub7grade = document.getElementById("sub7grade").value;
+		var sub7credits = document.getElementById("sub7credits").value;
+		var sub8grade = document.getElementById("sub8grade").value;
+		var sub8credits = document.getElementById("sub8credits").value;
+		var sub9grade = document.getElementById("sub9grade").value;
+		var sub9credits = document.getElementById("sub9credits").value;
+		var sub10grade = document.getElementById("sub10grade").value;
+		var sub10credits = document.getElementById("sub10credits").value;
+		var sub11grade = document.getElementById("sub11grade").value;
+		var sub11credits = document.getElementById("sub11credits").value;
+		var sub12grade = document.getElementById("sub12grade").value;
+		var sub12credits = document.getElementById("sub12credits").value;
+		//document.write(sub1credits);
+		 var Totalcredits = tcredits+sub1credits+sub2credits+sub3credits+sub4credits+sub5credits+sub6credits+sub7credits+sub8credits+sub9credits+sub10credits+sub11credits+sub12credits;
+		 var weightedcredits = currentCG*tcredits + sub1grade*sub1credits+ sub2grade*sub2credits+sub3grade*sub3credits+sub4grade*sub4credits+sub5grade*sub5credits+sub6grade*sub6credits+sub7grade*sub7credits+sub8grade*sub8credits+sub9grade*sub9credits+sub10grade*sub10credits+sub11grade*sub11credits+sub12grade*sub12credits;
+		 var expected_cg = weightedcredits/Totalcredits;
+		// alert('Your Expected CGPA is ' + currentCG);
+		//document.write(expected_cg);
+		}
+		
+	</script>
 </body>
 </html>

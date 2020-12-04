@@ -15,6 +15,8 @@ Next you are supposed to enter the subject credits and expected grades in the ta
 There is a provision of 12 subjects. Change the input field from *0* to the desired value. 
 When done, press the *Submit Query* Button and your expected CGPA will be displayed.
 
+Try out different combinations and get an idea of how much effort to put in, in each subject in the upcoming semester to acheive your desired CGPA.
+
 ## Contributions:
 
 Have a look at the issues and send a Pull Request accordingly
@@ -26,5 +28,6 @@ Here is a list of present open issues:
 2. Design a favicon for the website
 3. Add a CSS Style sheet
 4. Separate the js stylesheet from index.html 
+5. Add 10 to 4 GPA Converter
 
 Any further feature request, feature addition, bug report is highly encouraged

@@ -31,3 +31,9 @@ Here is a list of present open issues:
 5. Add 10 to 4 GPA Converter
 
 Any further feature request, feature addition, bug report is highly encouraged
+
+## Communication Channel:
+
+Join the following slack channel for communication:
+
+https://join.slack.com/t/cgpaestimatorgroup/shared_invite/zt-jxt14ipt-7Cy0dFQPYikzS_yVwWubHQ

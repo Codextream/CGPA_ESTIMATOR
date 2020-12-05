@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CGPA Calculator</title>
-    <script src="./Javascript/scripts.js" type="text/javascript"></script>
+    <script src="./Javascript/scripts.js"></script>
 </head>
+
+
 
 <body>
     <form name="PresentCG">
@@ -78,9 +82,12 @@
                 <td><input type="number" name="sub12credits" id="sub12credits" value="0"></td>
             </tr>
         </table>
-        <form>
-            <input type="Submit" name="Submit!" onclick="cg()">
-        </form>
+
+        <input type="Submit" name="Submit" onclick="cg(event)">
+    </form>
+    <div class="CgpaValue">
+
+    </div>
 
 </body>
 

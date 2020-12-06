@@ -1,6 +1,6 @@
 # CGPA_ESTIMATOR
 
-This project aims to help you calculate your expected CGPA based on the grades you think you might end up getting.
+This project aims to help you to calculate your expected CGPA based on the grades you think you might end up getting.
 The input fields are are as follows:
 
 #### **Current CGPA:** 

@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+*::selection{
+    background-color: rgb(204, 204, 204);
+    color: rgb(43, 43, 43);
+}
+
+body{
+    font-family: 'Montserrat', serif;
+    background-color: rgb(43, 43, 43);
+    color:rgb(235, 235, 235);
+}
+
+#MainCont{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    width: 100vw;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    padding: 30px;
+    margin-top: 10px;
+    overflow: visible;
+    font-family: 'Major Mono Display', serif;
+}
+
+#PresCgForm{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4px;
+}
+
+#PresCgForm>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#PresCgForm>div>input{
+    margin: 10px;
+    width: 25em;
+    height: 3em;
+    border-radius: 30px;
+}
+
+#PresCgForm>div>input:focus{
+    border: transparent solid;
+}
+
+#ExpTable{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+#ExpTable td,th{
+    width: 30vw;
+    text-align: center;
+    margin: 7px;
+}
+
+#ExpTable tr{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Submitb{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    overflow: visible;
+}
+
+input{
+    height: 2em;
+    background-color: rgb(33, 33, 33);
+    border: rgb(33, 33, 33) solid;
+    text-align: center;
+    color: rgb(235, 235, 235);
+    border-radius: 20px;
+}
+
+#Submitb input{
+    width: 10em;
+    padding: 10px;
+    overflow: visible;
+    height: auto;
+    margin: 15px;
+    border: rgb(235, 235, 235) solid 2px;
+}

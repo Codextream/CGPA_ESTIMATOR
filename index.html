@@ -2,14 +2,21 @@
 <html>
 <head>
 	<title>CGPA Calculator</title>
+	<link rel="stylesheet" href="./assets/styles/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat:wght@300&display=swap" rel="stylesheet">  
 </head>
 <body>
-<form name="PresentCG">
-	Current CGPA: <input type="number" step="any" name="current_cg" id="current_cg">
-	Total Credits Cleared: <input type="number" name="tpastcredits" id="tpastcredits">
+	<header>
+		CGPA Estimator
+	</header>
+	<div id="MainCont">
+	<form id="PresCgForm" name="PresentCG">
+		<div>Current CGPA<input type="number" step="any" name="current_cg" id="current_cg"></div>
+		<div>Total Credits Cleared<input type="number" name="tpastcredits" id="tpastcredits"></div>
 	</form>
 	<form name="Expected">
-		          <table>
+		          <table id="ExpTable">
 				  <tr>
 				    <th></th>
 				    <th>Grade</th>
@@ -76,9 +83,11 @@
 				    <td><input type="number" name="sub12credits" id="sub12credits" value="0"></td>
 				  </tr>
 				</table>
-	<form>
+			</form>
+	<form id="Submitb">
 		<input type="Submit" name="Submit!" onclick="cg()">
 	</form>
+</div>
 	<script type="text/javascript"> 
 		function cg() {
 			var currentCG = document.PresentCG.current_cg.value;

@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="style.css" />
 	<title>CGPA Calculator</title>
 </head>
 <body>
-<form name="PresentCG">
-	Current CGPA: <input type="number" step="any" name="current_cg" id="current_cg">
-	Total Credits Cleared: <input type="number" name="tpastcredits" id="tpastcredits">
+<form name="PresentCG" class="values">
+	Current CGPA: <input type="number" step="any" name="current_cg" id="current_cg" placeholder="0">
+	Total Credits Cleared: <input type="number" name="tpastcredits" id="tpastcredits" placeholder="0">
 	</form>
 	<form name="Expected">
-		          <table>
+		          <table class="values">
 				  <tr>
 				    <th></th>
 				    <th>Grade</th>
@@ -17,67 +18,67 @@
 				  </tr>
 				  <tr>
 				    <td>SUBJECT 1</td>
-				    <td><input type="number" name="sub1grade" id="sub1grade" value="0"></td>
-				    <td><input type="number" name="sub1credits" id="sub1credits" value="0"></td>
+				    <td><input type="number" name="sub1grade" id="sub1grade"  placeholder="0"></td>
+				    <td><input type="number" name="sub1credits" id="sub1credits"  placeholder="0"></td>
 				  </tr>
 				  <tr>
 				    <td>SUBJECT 2</td>
-				    <td><input type="number" name="sub2grade" id="sub2grade" value="0"></td>
-				    <td><input type="number" name="sub2credits" id="sub2credits" value="0"></td>
+				    <td><input type="number" name="sub2grade" id="sub2grade" placeholder="0"></td>
+				    <td><input type="number" name="sub2credits" id="sub2credits" placeholder="0"></td>
 				  </tr>
 				  <tr>
 				    <td>SUBJECT 3</td>
-				    <td><input type="number" name="sub3grade" id="sub3grade" value="0"></td>
-				    <td><input type="number" name="sub3credits" id="sub3credits" value="0"></td>
+				    <td><input type="number" name="sub3grade" id="sub3grade" placeholder="0"></td>
+				    <td><input type="number" name="sub3credits" id="sub3credits" placeholder="0"></td>
 				  </tr>
 				  <tr>
 				    <td>SUBJECT 4</td>
-				    <td><input type="number" name="sub4grade" id="sub4grade" value="0"></td>
-				    <td><input type="number" name="sub4credits" id="sub4credits" value="0"></td>
+				    <td><input type="number" name="sub4grade" id="sub4grade" placeholder="0"></td>
+				    <td><input type="number" name="sub4credits" id="sub4credits" placeholder="0"></td>
 				  </tr>
 				  <tr>
 				    <td>SUBJECT 5</td>
-				    <td><input type="number" name="sub5grade" id="sub5grade" value="0"></td>
-				    <td><input type="number" name="sub5credits" id="sub5credits" value="0"></td>
+				    <td><input type="number" name="sub5grade" id="sub5grade" placeholder="0"></td>
+				    <td><input type="number" name="sub5credits" id="sub5credits" placeholder="0"></td>
 				  </tr>
 				  <tr>
 				    <td>SUBJECT 6</td>
-				    <td><input type="number" name="sub6grade" id="sub6grade" value="0"></td>
-				    <td><input type="number" name="sub6credits" id="sub6credits" value="0"></td>
+				    <td><input type="number" name="sub6grade" id="sub6grade" placeholder="0"></td>
+				    <td><input type="number" name="sub6credits" id="sub6credits" placeholder="0"></td>
 				  </tr>
 				  <tr>
 				    <td>SUBJECT 7</td>
-				    <td><input type="number" name="sub7grade" id="sub7grade" value="0"></td>
-				    <td><input type="number" name="sub7credits" id="sub7credits" value="0"></td>
+				    <td><input type="number" name="sub7grade" id="sub7grade" placeholder="0"></td>
+				    <td><input type="number" name="sub7credits" id="sub7credits" placeholder="0"></td>
 				  </tr>
 				  <tr>
 				    <td>SUBJECT 8</td>
-				    <td><input type="number" name="sub8grade" id="sub8grade" value="0"></td>
-				    <td><input type="number" name="sub8credits" id="sub8credits" value="0"></td>
+				    <td><input type="number" name="sub8grade" id="sub8grade" placeholder="0"></td>
+				    <td><input type="number" name="sub8credits" id="sub8credits" placeholder="0"></td>
 				  </tr>
 				  <tr>
 				    <td>SUBJECT 9</td>
-				    <td><input type="number" name="sub9grade" id="sub9grade" value="0"></td>
-				    <td><input type="number" name="sub9credits" id="sub9credits" value="0"></td>
+				    <td><input type="number" name="sub9grade" id="sub9grade" placeholder="0"></td>
+				    <td><input type="number" name="sub9credits" id="sub9credits" placeholder="0"></td>
 				  </tr>
 				  <tr>
 				    <td>SUBJECT 10</td>
-				    <td><input type="number" name="sub10grade" id="sub10grade" value="0"></td>
-				    <td><input type="number" name="sub10credits" id="sub10credits" value="0"></td>
+				    <td><input type="number" name="sub10grade" id="sub10grade" placeholder="0"></td>
+				    <td><input type="number" name="sub10credits" id="sub10credits" placeholder="0"></td>
 				  </tr>
 				  <tr>
 				    <td>SUBJECT 11</td>
-				    <td><input type="number" name="sub11grade" id="sub11grade" value="0"></td>
-				    <td><input type="number" name="sub11credits" id="sub11credits" value="0"></td>
+				    <td><input type="number" name="sub11grade" id="sub11grade" placeholder="0"></td>
+				    <td><input type="number" name="sub11credits" id="sub11credits" placeholder="0"></td>
 				  </tr>
 				  <tr>
 				    <td>SUBJECT 12</td>
-				    <td><input type="number" name="sub12grade" id="sub12grade" value="0"></td>
-				    <td><input type="number" name="sub12credits" id="sub12credits" value="0"></td>
+				    <td><input type="number" name="sub12grade" id="sub12grade" placeholder="0"></td>
+				    <td><input type="number" name="sub12credits" id="sub12credits" placeholder="0"></td>
 				  </tr>
 				</table>
 	<form>
-		<input type="Submit" name="Submit!" onclick="cg()">
+		<input type="Submit" name="Submit!" class="btn" onclick="cg()">
 	</form>
 	<script type="text/javascript"> 
 		function cg() {

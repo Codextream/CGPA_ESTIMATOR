@@ -3,17 +3,18 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    
 }
 
 *::selection{
     background-color: rgb(204, 204, 204);
-    color: rgb(43, 43, 43);
+    color: rgb(236, 236, 236);
 }
 
 body{
     font-family: 'Montserrat', serif;
-    background-color: rgb(43, 43, 43);
-    color:rgb(235, 235, 235);
+    background-color: rgb(255, 255, 255);
+    color:rgb(34, 34, 34);
 }
 
 #MainCont{
@@ -23,6 +24,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-weight: 600;
 }
 
 header{
@@ -35,7 +37,7 @@ header{
     padding: 30px;
     margin-top: 10px;
     overflow: visible;
-    font-family: 'Major Mono Display', serif;
+    font-family: 'Lemonada', serif;
 }
 
 #PresCgForm{
@@ -96,12 +98,13 @@ header{
 
 input{
     height: 2em;
-    background-color: rgb(33, 33, 33);
-    border: rgb(33, 33, 33) solid;
+    background-color: rgb(255, 255, 255);
+    border: rgb(0, 183, 255) solid;
     text-align: center;
-    color: rgb(235, 235, 235);
+    color: rgb(27, 27, 27);
     border-radius: 20px;
 }
+
 
 #Submitb input{
     width: 10em;
@@ -109,5 +112,14 @@ input{
     overflow: visible;
     height: auto;
     margin: 15px;
-    border: rgb(235, 235, 235) solid 2px;
+    font-weight: 600;
+    font-size: 1em;
+    border: rgb(0, 183, 255) solid 2px;
+    
+}
+
+#Submitb input:hover{
+    transform: scale(0.9);
+    box-shadow: 2px 2px  rgb(0, 153, 255);
+
 }

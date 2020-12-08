@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>CGPA Calculator</title>
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-<form name="PresentCG">
-	Current CGPA: <input type="number" step="any" name="current_cg" id="current_cg">
-	Total Credits Cleared: <input type="number" name="tpastcredits" id="tpastcredits">
+    <div class="main-container">
+        <h1>CGPA Estimator</h1>
+<form name="PresentCG" class="form1">
+    <div class="form1-div">
+        <label>Current CGPA </label><input type="number" step="any" name="current_cg" id="current_cg">
+    </div>
+	<div class="form1-div">
+        <label>Total Credits Cleared</label> <input type="number" name="tpastcredits" id="tpastcredits">
+    </div>
 	</form>
-	<form name="Expected">
+	<form name="Expected" class="form2">
 		          <table>
 				  <tr>
 				    <th></th>
@@ -77,8 +85,9 @@
 				  </tr>
 				</table>
 	<form>
-		<input type="Submit" name="Submit!" onclick="cg()">
+		<input type="Submit" name="Submit!" onclick="cg()" class="submit">
 	</form>
+    </div>
 	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

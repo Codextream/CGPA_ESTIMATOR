@@ -2,83 +2,112 @@
 <html>
 <head>
 	<title>CGPA Calculator</title>
+	<!-- CSS only -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Arvo|Nunito+Sans|Raleway|Source+Sans+Pro|Ubuntu&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="css/lightbox.css" rel="stylesheet" />
+
 </head>
 <body>
-<form name="PresentCG">
-	Current CGPA: <input type="number" step="any" name="current_cg" id="current_cg">
-	Total Credits Cleared: <input type="number" name="tpastcredits" id="tpastcredits">
-	</form>
-	<form name="Expected">
-		          <table>
-				  <tr>
-				    <th></th>
-				    <th>Grade</th>
-				    <th>Credit</th>
-				  </tr>
-				  <tr>
-				    <td>SUBJECT 1</td>
-				    <td><input type="number" name="sub1grade" id="sub1grade" value="0"></td>
-				    <td><input type="number" name="sub1credits" id="sub1credits" value="0"></td>
-				  </tr>
-				  <tr>
-				    <td>SUBJECT 2</td>
-				    <td><input type="number" name="sub2grade" id="sub2grade" value="0"></td>
-				    <td><input type="number" name="sub2credits" id="sub2credits" value="0"></td>
-				  </tr>
-				  <tr>
-				    <td>SUBJECT 3</td>
-				    <td><input type="number" name="sub3grade" id="sub3grade" value="0"></td>
-				    <td><input type="number" name="sub3credits" id="sub3credits" value="0"></td>
-				  </tr>
-				  <tr>
-				    <td>SUBJECT 4</td>
-				    <td><input type="number" name="sub4grade" id="sub4grade" value="0"></td>
-				    <td><input type="number" name="sub4credits" id="sub4credits" value="0"></td>
-				  </tr>
-				  <tr>
-				    <td>SUBJECT 5</td>
-				    <td><input type="number" name="sub5grade" id="sub5grade" value="0"></td>
-				    <td><input type="number" name="sub5credits" id="sub5credits" value="0"></td>
-				  </tr>
-				  <tr>
-				    <td>SUBJECT 6</td>
-				    <td><input type="number" name="sub6grade" id="sub6grade" value="0"></td>
-				    <td><input type="number" name="sub6credits" id="sub6credits" value="0"></td>
-				  </tr>
-				  <tr>
-				    <td>SUBJECT 7</td>
-				    <td><input type="number" name="sub7grade" id="sub7grade" value="0"></td>
-				    <td><input type="number" name="sub7credits" id="sub7credits" value="0"></td>
-				  </tr>
-				  <tr>
-				    <td>SUBJECT 8</td>
-				    <td><input type="number" name="sub8grade" id="sub8grade" value="0"></td>
-				    <td><input type="number" name="sub8credits" id="sub8credits" value="0"></td>
-				  </tr>
-				  <tr>
-				    <td>SUBJECT 9</td>
-				    <td><input type="number" name="sub9grade" id="sub9grade" value="0"></td>
-				    <td><input type="number" name="sub9credits" id="sub9credits" value="0"></td>
-				  </tr>
-				  <tr>
-				    <td>SUBJECT 10</td>
-				    <td><input type="number" name="sub10grade" id="sub10grade" value="0"></td>
-				    <td><input type="number" name="sub10credits" id="sub10credits" value="0"></td>
-				  </tr>
-				  <tr>
-				    <td>SUBJECT 11</td>
-				    <td><input type="number" name="sub11grade" id="sub11grade" value="0"></td>
-				    <td><input type="number" name="sub11credits" id="sub11credits" value="0"></td>
-				  </tr>
-				  <tr>
-				    <td>SUBJECT 12</td>
-				    <td><input type="number" name="sub12grade" id="sub12grade" value="0"></td>
-				    <td><input type="number" name="sub12credits" id="sub12credits" value="0"></td>
-				  </tr>
-				</table>
-	<form>
-		<input type="Submit" name="Submit!" onclick="cg()">
-	</form>
+<div class="container">
+	<div class="row newRow">
+		<div class="col-md-2">
+
+		</div>
+		<div class="col-md-8">
+			<form name="PresentCG">
+				<div class="form-group topSection bg-success bg-light">
+				<label class="mr-3">Current CGPA: </label><input type="number" step="any" name="current_cg" id="current_cg" placeholder="Enter Current CGPA"></div>
+				<div class="form-group topSection bg-success bg-light"><label class="mr-3">Total Credits Cleared:</label> <input type="number" name="tpastcredits" id="tpastcredits" placeholder="Enter Total Credits"></div>
+			</form>
+			<form name="Expected">
+							  <table class="table table-bordered table-hover">
+							  <thead class="thead-warning">
+								<th></th>
+								<th>Grade</th>
+								<th>Credit</th>
+							  </tr>
+							  <tr class="table-success">
+								<td>SUBJECT 1</td>
+								<td><input type="number" name="sub1grade" id="sub1grade" value="0"></td>
+								<td><input type="number" name="sub1credits" id="sub1credits" value="0"></td>
+							  </tr>
+							  <tr class="table-success">
+								<td>SUBJECT 2</td>
+								<td><input type="number" name="sub2grade" id="sub2grade" value="0"></td>
+								<td><input type="number" name="sub2credits" id="sub2credits" value="0"></td>
+							  </tr>
+							  <tr class="table-success">
+								<td>SUBJECT 3</td>
+								<td><input type="number" name="sub3grade" id="sub3grade" value="0"></td>
+								<td><input type="number" name="sub3credits" id="sub3credits" value="0"></td>
+							  </tr>
+							  <tr class="table-success">
+								<td>SUBJECT 4</td>
+								<td><input type="number" name="sub4grade" id="sub4grade" value="0"></td>
+								<td><input type="number" name="sub4credits" id="sub4credits" value="0"></td>
+							  </tr>
+							  <tr class="table-success">
+								<td>SUBJECT 5</td>
+								<td><input type="number" name="sub5grade" id="sub5grade" value="0"></td>
+								<td><input type="number" name="sub5credits" id="sub5credits" value="0"></td>
+							  </tr>
+							  <tr class="table-success">
+								<td>SUBJECT 6</td>
+								<td><input type="number" name="sub6grade" id="sub6grade" value="0"></td>
+								<td><input type="number" name="sub6credits" id="sub6credits" value="0"></td>
+							  </tr>
+							  <tr class="table-success">
+								<td>SUBJECT 7</td>
+								<td><input type="number" name="sub7grade" id="sub7grade" value="0"></td>
+								<td><input type="number" name="sub7credits" id="sub7credits" value="0"></td>
+							  </tr>
+							  <tr class="table-success">
+								<td>SUBJECT 8</td>
+								<td><input type="number" name="sub8grade" id="sub8grade" value="0"></td>
+								<td><input type="number" name="sub8credits" id="sub8credits" value="0"></td>
+							  </tr>
+							  <tr class="table-success">
+								<td>SUBJECT 9</td>
+								<td><input type="number" name="sub9grade" id="sub9grade" value="0"></td>
+								<td><input type="number" name="sub9credits" id="sub9credits" value="0"></td>
+							  </tr>
+							  <tr class="table-success">
+								<td>SUBJECT 10</td>
+								<td><input type="number" name="sub10grade" id="sub10grade" value="0"></td>
+								<td><input type="number" name="sub10credits" id="sub10credits" value="0"></td>
+							  </tr>
+							  <tr class="table-success">
+								<td>SUBJECT 11</td>
+								<td><input type="number" name="sub11grade" id="sub11grade" value="0"></td>
+								<td><input type="number" name="sub11credits" id="sub11credits" value="0"></td>
+							  </tr>
+							  <tr class="table-success">
+								<td>SUBJECT 12</td>
+								<td><input type="number" name="sub12grade" id="sub12grade" value="0"></td>
+								<td><input type="number" name="sub12credits" id="sub12credits" value="0"></td>
+							  </tr>
+							</table>
+				<form>
+					<div class="submitBtn">
+					<input type="Submit" class="btn btn-warning" name="Submit!" onclick="cg()">
+					</div>
+				</form>
+
+		</div>
+		<div class="col-md-2">
+
+		</div>
+	</div>
+	
+
+	
+</div>
 	<script type="text/javascript"> 
 		function cg() {
 			var currentCG = document.PresentCG.current_cg.value;

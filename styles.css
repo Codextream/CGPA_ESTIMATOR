@@ -23,11 +23,13 @@ h1 {
     padding: 3%;
 }
 
+
+
 .container th h1 {
+    color: #185875;
     font-weight: bold;
     font-size: 1em;
     text-align: left;
-    color: #185875;
     font-size: 2rem;
 }
 

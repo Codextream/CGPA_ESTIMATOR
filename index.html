@@ -1,88 +1,111 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>CGPA Calculator</title>
+	<!-- Bootstrap cdn -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+	</script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+		integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<!-- Google Fonts -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+		rel="stylesheet">
+	<!-- Styles css -->
+	<!-- font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu', sans-serif; -->
+	<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<form name="PresentCG">
-	Current CGPA: <input type="number" step="any" name="current_cg" id="current_cg">
-	Total Credits Cleared: <input type="number" name="tpastcredits" id="tpastcredits">
+	<h1>CGPA Calculator</h1>
+	<form name="PresentCG" class="top-form">
+		Current CGPA: <input type="number" step="any" name="current_cg" id="current_cg">
+		Total Credits Cleared: <input type="number" name="tpastcredits" id="tpastcredits">
 	</form>
 	<form name="Expected">
-		          <table>
-				  <tr>
-				    <th></th>
-				    <th>Grade</th>
-				    <th>Credit</th>
-				  </tr>
-				  <tr>
-				    <td>SUBJECT 1</td>
-				    <td><input type="number" name="sub1grade" id="sub1grade" value="0"></td>
-				    <td><input type="number" name="sub1credits" id="sub1credits" value="0"></td>
-				  </tr>
-				  <tr>
-				    <td>SUBJECT 2</td>
-				    <td><input type="number" name="sub2grade" id="sub2grade" value="0"></td>
-				    <td><input type="number" name="sub2credits" id="sub2credits" value="0"></td>
-				  </tr>
-				  <tr>
-				    <td>SUBJECT 3</td>
-				    <td><input type="number" name="sub3grade" id="sub3grade" value="0"></td>
-				    <td><input type="number" name="sub3credits" id="sub3credits" value="0"></td>
-				  </tr>
-				  <tr>
-				    <td>SUBJECT 4</td>
-				    <td><input type="number" name="sub4grade" id="sub4grade" value="0"></td>
-				    <td><input type="number" name="sub4credits" id="sub4credits" value="0"></td>
-				  </tr>
-				  <tr>
-				    <td>SUBJECT 5</td>
-				    <td><input type="number" name="sub5grade" id="sub5grade" value="0"></td>
-				    <td><input type="number" name="sub5credits" id="sub5credits" value="0"></td>
-				  </tr>
-				  <tr>
-				    <td>SUBJECT 6</td>
-				    <td><input type="number" name="sub6grade" id="sub6grade" value="0"></td>
-				    <td><input type="number" name="sub6credits" id="sub6credits" value="0"></td>
-				  </tr>
-				  <tr>
-				    <td>SUBJECT 7</td>
-				    <td><input type="number" name="sub7grade" id="sub7grade" value="0"></td>
-				    <td><input type="number" name="sub7credits" id="sub7credits" value="0"></td>
-				  </tr>
-				  <tr>
-				    <td>SUBJECT 8</td>
-				    <td><input type="number" name="sub8grade" id="sub8grade" value="0"></td>
-				    <td><input type="number" name="sub8credits" id="sub8credits" value="0"></td>
-				  </tr>
-				  <tr>
-				    <td>SUBJECT 9</td>
-				    <td><input type="number" name="sub9grade" id="sub9grade" value="0"></td>
-				    <td><input type="number" name="sub9credits" id="sub9credits" value="0"></td>
-				  </tr>
-				  <tr>
-				    <td>SUBJECT 10</td>
-				    <td><input type="number" name="sub10grade" id="sub10grade" value="0"></td>
-				    <td><input type="number" name="sub10credits" id="sub10credits" value="0"></td>
-				  </tr>
-				  <tr>
-				    <td>SUBJECT 11</td>
-				    <td><input type="number" name="sub11grade" id="sub11grade" value="0"></td>
-				    <td><input type="number" name="sub11credits" id="sub11credits" value="0"></td>
-				  </tr>
-				  <tr>
-				    <td>SUBJECT 12</td>
-				    <td><input type="number" name="sub12grade" id="sub12grade" value="0"></td>
-				    <td><input type="number" name="sub12credits" id="sub12credits" value="0"></td>
-				  </tr>
-				</table>
-	<form>
-		<input type="Submit" name="Submit!" onclick="cg()">
+		<table class="container">
+			<tr class="table-heading">
+				<th></th>
+				<th>
+					<h1>Grade</h1>
+				</th>
+				<th>
+					<h1>Credit</h1>
+				</th>
+			</tr>
+			<tr>
+				<td>SUBJECT 1</td>
+				<td><input type="number" name="sub1grade" id="sub1grade" value="0"></td>
+				<td><input type="number" name="sub1credits" id="sub1credits" value="0"></td>
+			</tr>
+			<tr>
+				<td>SUBJECT 2</td>
+				<td><input type="number" name="sub2grade" id="sub2grade" value="0"></td>
+				<td><input type="number" name="sub2credits" id="sub2credits" value="0"></td>
+			</tr>
+			<tr>
+				<td>SUBJECT 3</td>
+				<td><input type="number" name="sub3grade" id="sub3grade" value="0"></td>
+				<td><input type="number" name="sub3credits" id="sub3credits" value="0"></td>
+			</tr>
+			<tr>
+				<td>SUBJECT 4</td>
+				<td><input type="number" name="sub4grade" id="sub4grade" value="0"></td>
+				<td><input type="number" name="sub4credits" id="sub4credits" value="0"></td>
+			</tr>
+			<tr>
+				<td>SUBJECT 5</td>
+				<td><input type="number" name="sub5grade" id="sub5grade" value="0"></td>
+				<td><input type="number" name="sub5credits" id="sub5credits" value="0"></td>
+			</tr>
+			<tr>
+				<td>SUBJECT 6</td>
+				<td><input type="number" name="sub6grade" id="sub6grade" value="0"></td>
+				<td><input type="number" name="sub6credits" id="sub6credits" value="0"></td>
+			</tr>
+			<tr>
+				<td>SUBJECT 7</td>
+				<td><input type="number" name="sub7grade" id="sub7grade" value="0"></td>
+				<td><input type="number" name="sub7credits" id="sub7credits" value="0"></td>
+			</tr>
+			<tr>
+				<td>SUBJECT 8</td>
+				<td><input type="number" name="sub8grade" id="sub8grade" value="0"></td>
+				<td><input type="number" name="sub8credits" id="sub8credits" value="0"></td>
+			</tr>
+			<tr>
+				<td>SUBJECT 9</td>
+				<td><input type="number" name="sub9grade" id="sub9grade" value="0"></td>
+				<td><input type="number" name="sub9credits" id="sub9credits" value="0"></td>
+			</tr>
+			<tr>
+				<td>SUBJECT 10</td>
+				<td><input type="number" name="sub10grade" id="sub10grade" value="0"></td>
+				<td><input type="number" name="sub10credits" id="sub10credits" value="0"></td>
+			</tr>
+			<tr>
+				<td>SUBJECT 11</td>
+				<td><input type="number" name="sub11grade" id="sub11grade" value="0"></td>
+				<td><input type="number" name="sub11credits" id="sub11credits" value="0"></td>
+			</tr>
+			<tr>
+				<td>SUBJECT 12</td>
+				<td><input type="number" name="sub12grade" id="sub12grade" value="0"></td>
+				<td><input type="number" name="sub12credits" id="sub12credits" value="0"></td>
+			</tr>
+		</table>
+		<button class="btn btn-lg btn-primary " type="submit" name="Submit!" onclick="cg()">Submit</button>
 	</form>
-	<script type="text/javascript"> 
+	<script type="text/javascript">
 		function cg() {
 			var currentCG = document.PresentCG.current_cg.value;
-			var tcredits =  document.PresentCG.tpastcredits.value;
+			var tcredits = document.PresentCG.tpastcredits.value;
 			var sub1grade = document.Expected.sub1grade.value;
 			var sub1credits = document.Expected.sub1credits.value;
 			var sub2grade = document.Expected.sub2grade.value;
@@ -107,11 +130,17 @@
 			var sub11credits = document.Expected.sub11credits.value;
 			var sub12grade = document.Expected.sub12grade.value;
 			var sub12credits = document.Expected.sub12credits.value;
-		 var totalcred = Number(tcredits)+Number(sub1credits)+Number(sub2credits)+Number(sub3credits)+Number(sub4credits)+Number(sub5credits)+Number(sub6credits)+Number(sub7credits)+Number(sub8credits)+Number(sub9credits)+Number(sub10credits)+Number(sub11credits)+Number(sub12credits);
-		 var weightedcredits = (currentCG*tcredits) + (sub1grade*sub1credits)+ (sub2grade*sub2credits) +(sub3grade*sub3credits)+(sub4grade*sub4credits)+ (sub5grade*sub5credits)+(sub6grade*sub6credits)+sub7grade*sub7credits+sub8grade*sub8credits+sub9grade*sub9credits+sub10grade*sub10credits+sub11grade*sub11credits+sub12grade*sub12credits;
-		 var expected_cg = weightedcredits/totalcred;
-		 alert('Your Expected CGPA is ' + expected_cg.toFixed(2));
+			var totalcred = Number(tcredits) + Number(sub1credits) + Number(sub2credits) + Number(sub3credits) + Number(
+					sub4credits) + Number(sub5credits) + Number(sub6credits) + Number(sub7credits) + Number(sub8credits) +
+				Number(sub9credits) + Number(sub10credits) + Number(sub11credits) + Number(sub12credits);
+			var weightedcredits = (currentCG * tcredits) + (sub1grade * sub1credits) + (sub2grade * sub2credits) + (
+					sub3grade * sub3credits) + (sub4grade * sub4credits) + (sub5grade * sub5credits) + (sub6grade *
+					sub6credits) + sub7grade * sub7credits + sub8grade * sub8credits + sub9grade * sub9credits + sub10grade *
+				sub10credits + sub11grade * sub11credits + sub12grade * sub12credits;
+			var expected_cg = weightedcredits / totalcred;
+			alert('Your Expected CGPA is ' + expected_cg.toFixed(2));
 		}
 	</script>
 </body>
+
 </html>

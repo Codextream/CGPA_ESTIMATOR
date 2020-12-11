@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="icon" href="images/logo1.png" type="image" />
 	<title>CGPA Calculator</title>
 </head>
 <body>
@@ -80,13 +79,6 @@
 	<form>
 		<input type="Submit" name="Submit!" onclick="cg()">
 	</form>
-
-	
-	<! -- cgpa to percentage converter -->
-	<div style="margin-top:20px;">
-	    <a href="percentage.html" target="_blank"><button>CGPA to Percentage</button></a>
-		</div>
-
 	<script type="text/javascript"> 
 		function cg() {
 			var currentCG = document.PresentCG.current_cg.value;
@@ -120,11 +112,6 @@
 		 var expected_cg = weightedcredits/totalcred;
 		 alert('Your Expected CGPA is ' + expected_cg.toFixed(2));
 		}
-		
-		function cgpaper(){
-		
-		}
-		
 	</script>
 </body>
 </html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>cgpa to percentage</title>
+   </head>
+   <body>
+        <form name="cgpa">
+	    <table>
+	          <tr>
+                  <td>Enter CGPA:</td>
+                  <td><input type="number" name="cgpatoper" id="cgpatoper" value="0" step="0.1"><br></td>
+	              <td><button onclick="cgpaper()">check Percentage</button></td>
+	          </tr>
+	    </table>
+	    </form>	
+	</body>
+	
+	<script>
+        function cgpaper() {
+            var x = document.cgpa.cgpatoper.value;
+			var y = x*9.5
+			alert('Your expected percentage is ' + y);
+     
+	 }
+	 </script>
+    </body>
+</html>

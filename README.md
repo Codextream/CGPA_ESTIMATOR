@@ -32,6 +32,10 @@ Here is a list of present open issues:
 
 Any further feature request, feature addition, bug report is highly encouraged
 
+
+## Contributing 🏆
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) before contributing to the repository (github-rest-api-v3)
+
 ## Communication Channel:
 
 Join the following slack channel for communication:

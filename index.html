@@ -2,17 +2,13 @@
 <html>
 <head>
 	<title>CGPA Calculator</title>
-	<link rel="stylesheet" href="styles2.css">
 </head>
 <body>
-	
-	<h1 class="title">Calculating CGPA is now easier..</h1>
-	<h3 class="subhead">Know your CGPA by entering the details below 👇</h3>
-<form name="PresentCG" id="presentCG">
-	CURRENT CGPA: <input type="number" step="any" name="current_cg" id="current_cg">
-	TOTAL CREDITS CLEARED: <input type="number" name="tpastcredits" id="tpastcredits">
+<form name="PresentCG">
+	Current CGPA: <input type="number" step="any" name="current_cg" id="current_cg">
+	Total Credits Cleared: <input type="number" name="tpastcredits" id="tpastcredits">
 	</form>
-	<form name="Expected" id="expected">
+	<form name="Expected">
 		          <table>
 				  <tr>
 				    <th></th>
@@ -80,9 +76,9 @@
 				    <td><input type="number" name="sub12credits" id="sub12credits" value="0"></td>
 				  </tr>
 				</table>
-
-		<input type="Submit" name="Submit!" onclick="cg()" id="submit">
+	<form>
+		<input type="Submit" name="Submit!" onclick="cg()">
 	</form>
-	<script type="text/javascript" src="index3.js"> </script>
+	<script type="text/javascript" src="script1.js" defer></script> 
 </body>
 </html>

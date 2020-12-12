@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+     background: radial-gradient(#fff,#ffd6d6);
+     text-align: center;
+     align-content:center;
+}
+
+.example{
+   display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+form{
+    margin-bottom: 5%;
+}
+

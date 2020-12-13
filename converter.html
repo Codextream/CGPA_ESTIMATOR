@@ -17,14 +17,34 @@
         color: cornsilk;
         height: 30px;
       }
+	  .container
+	  {
+		border-radius: 5px;
+		  background-color: #f2f2f2;
+		  padding-top: 4px;
+		  padding-bottom: 20px;
+		margin-left: 250px;
+		margin-right: 250px;
+		
+		
+	  
+	  }
     </style>
+	<style type="text/css">
+		h1{
+			font-family: comic sans ms;
+			color: purple;
+		}
+		
+	
+	</style>
   </head>
   <body>
-    <h1 style="text-align: center">10 GPA TO 4 GPA CONVERTER</h1>
+    <h1 style="text-align: center">10 GPA to 4 GPA Converter</h1>
     <br />
-
-    <form style="text-align: center; margin-top: 50px">
-      <label>GPA out of 10 :</label>
+	<div class="container">
+    <form style="text-align: center; margin-top: 20px;">
+      <label>GPA out of 10.00 :</label>
       <input
         type="number"
         id="gpa10"
@@ -41,14 +61,18 @@
       <label>GPA out of 4 : </label>
       <input type="number" id="gpa4" name="gpa4" value="0.0" />
     </form>
-
+	</div>
     <script>
       function myfunction() {
         var inputgpa = parseFloat(document.getElementById("gpa10").value);
         console.log(inputgpa);
 
         var calculatedgpa = 0.0;
-        if (inputgpa >= 8.5) {
+		if(inputgpa>10.0)
+		{
+			alert("Input GPA cannot be greater than 10.00");
+		}
+        else if (inputgpa >= 8.5) {
           calculatedgpa = 4.0;
         } else if (inputgpa >= 8.0) {
           calculatedgpa = 3.7;
@@ -73,7 +97,7 @@
         }
 
         if (inputgpa < 0) {
-          alert("input GPA  can't be negative");
+          alert("Input GPA  can't be negative");
         }
 
         document.getElementById("gpa4").value = parseFloat(

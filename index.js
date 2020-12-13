@@ -26,7 +26,7 @@ function AddSubject(num){
     var Cre = document.querySelector('#Credit');
     Cre.innerHTML = 'Credit';
     
-    var subgrade = [];
+    
     for (var i = 1; i <= parseInt(num.value); i++) {
         
         var fir1 = document.createElement('div');
@@ -47,15 +47,20 @@ function cg(){
     var currentCG = document.PresentCG.current_cg.value;
     var tcredits =  document.PresentCG.tpastcredits.value;
     var totalcred = Number(tcredits);
-    var weightedcredits = 0;
+    var weightedcredits = currentCG*tcredits;
     for(var i=1;i<=number;i++){
         totalcred = totalcred + Number(document.getElementById("sub"+i+"credits").value);
-        var weightedcredits = (currentCG*tcredits) + Number((document.getElementById("sub"+i+"grade").value)*(document.getElementById("sub"+i+"credits").value))
+        var weightedcredits = weightedcredits + Number((document.getElementById("sub"+i+"grade").value)*(document.getElementById("sub"+i+"credits").value))
         var expected_cg = (weightedcredits/totalcred).toFixed(2);
     }
     if(expected_cg === undefined){
         if(currentCG == 0){
-        alert('your Expected CGPA is NaN');}
+          if(tcredits==0){
+            alert('Your Expected CGPA is NaN');
+        }
+    else{
+        alert('Your Expected CGPA is 0.00');
+    }}
         else{
             alert('Your Expected CGPA is ' + currentCG)
         }

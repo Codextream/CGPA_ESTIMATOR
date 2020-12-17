@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+*{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+}
+body{
+    font-family: 'Lato',sans-serif;
+    background: linear-gradient( to right, #256e4c5b, #3c968e59, #0076864f, #28575354, #184b3350), url(../img/Abstract_Background.jpg);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgb(85, 84, 84);
+    margin-top:3px;
+}
+
+
+.heading-primary-sub {
+    font-family: 'Maiandra GD',sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+    margin-top: 0px;
+    color: rgb(251, 255, 0);
+    text-shadow: 0 0 8px rgb(39, 39, 30);
+    display: block;
+    animation: moveInRight 2s ease-in-out;
+    animation-delay: 0.01s;
+    animation-fill-mode: backwards;
+}
+
+.glow {
+    text-shadow: 0 0 10px #FCF6BA, 0 0 50px #FCF6BA;
+}
+
+.main-container{
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);
+    height: 80%;
+    width:65%;
+    padding: 5%;
+    padding-left: 3%;
+    margin: auto;
+    background: linear-gradient( to right,#3dd3c6, #89fbffda, #3f8882ab);
+    align-items: center;
+    border: 0.8px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.form1{
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+
+}
+
+.form1-div{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form1-div label{
+    display: block;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.form1-div input{
+    padding: 4px;
+    outline: none;
+    width: 200px;
+    border-radius: 20px;
+    border: 1px solid #000;
+    transition: 0.5s;
+    
+}
+
+.form1-div input:focus{
+    border: 2px solid #000;
+}
+
+.form2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    text-transform:capitalize;
+}
+.form2 table tr{
+    padding: 30px;
+    margin: 10px;
+}
+.form2 tr th,
+.form2 tr td{
+    padding:2px;
+    padding-right: 20px;
+}
+.form2 tr td input{
+    padding: 4px;
+    outline: none;
+    width: 200px;
+    border-radius: 20px;
+    border: 1px solid #000;
+    transition: 0.5s;
+}
+.submit{
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius:40%;
+    border-right: 3px black outset;
+    border-bottom: 3px black outset;
+    background: linear-gradient( to right, rgba(255, 255, 255, 0.842), rgba(223, 224, 161, 0.829), rgba(255, 251, 0, 0.842));
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+    font-weight:lighter;
+    
+}
+
+@media (max-width: 1000px)
+{
+    .main-container{
+        width: 80%;
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    50% {
+        transform: translateX(-40px);
+    }
+    80% {
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}

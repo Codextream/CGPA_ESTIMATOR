@@ -1,0 +1,30 @@
+.newRow
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.topSection{
+    text-align: center;
+    margin-top : 10px;
+    margin-bottom: 10px;
+    border: solid 1px;
+    padding: 10px;
+    
+}
+.thead-warning
+{
+    background-color: #fcfcde;
+}
+
+.table
+{
+    border-radius: 40%;
+}
+
+.submitBtn
+{
+    text-align: center;
+    margin: 10px;
+}

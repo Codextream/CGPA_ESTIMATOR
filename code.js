@@ -1,3 +1,4 @@
+
 function AddSubject(num){
     
     if(num.value==0){
@@ -22,8 +23,10 @@ function AddSubject(num){
     var thi = document.querySelector('#Third');
     thi.innerHTML='';
     var Gra = document.querySelector('#Grade');
-    Gra.innerHTML = 'Grade';
+    document.getElementById('Grade').style.visibility="visible";
+    Gra.innerHTML = 'Gradepoint';
     var Cre = document.querySelector('#Credit');
+    document.getElementById('Credit').style.visibility="visible";
     Cre.innerHTML = 'Credit';
     
     

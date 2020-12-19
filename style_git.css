@@ -1,0 +1,77 @@
+
+body{
+	padding-bottom:20px;
+	}
+span{
+	font-size: 1.2rem;
+	font-family: Arial;
+}
+#Grade,#Credit{
+	text-align: center;
+	color:black;
+	font-weight: bold;
+	font-family: 'Courgette', cursive;
+
+
+}
+.subjects th{
+	background: #fdb913;
+}
+.subject{
+	background:#3c3130;
+	font-family: 'Courgette', cursive;
+	padding-left:5px;
+	padding-right: 5px;
+
+}
+#submit_button{
+	padding:8px;
+	font-size: 20px;
+	font-weight: bold;
+	width:150px;
+	color:#24e14f;
+
+}
+#submit_button:hover{
+	color:white;
+}
+.gpa_button{
+	background:transparent;
+	border:1px #df7330 solid;
+	color:#ecb18d;
+	padding:10px;
+	font-weight: bold;
+	border-radius: 4px;
+	font-size: 18px;
+}
+.gpa_button:hover{
+	background: #df7330;
+	color:black;
+}
+.gpa_submit_button{
+	padding:2px;
+	font-size: 15px;
+	background:white;
+	font-weight: bolder;
+	width:100px;
+	color:#278b3e;
+	border:2px #278b3e solid;
+
+}
+.gpa_submit_button:hover{
+	color:white;
+	background:#278b3e;
+}
+.back_to_home{
+	color:#5e3c28;
+	background:transparent;
+	border:1px #5e3c28 solid;
+	padding:8px;
+	font-weight:bold;
+	border-radius:4px;
+	font-size: 16px;
+}
+.back_to_home:hover{
+	background:#5e3c28;
+	color:white;
+}

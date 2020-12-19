@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style_git.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <title>GPA Converter</title>
+    <nav class="navbar navbar-light bg-success" >
+		<a class='navbar-brand' href='#'><i class="fa fa-calculator fa-2x"></i></a>
+		<span class="nav-title mr-auto mb-0 h1" style='color: white;text-align: center; font-family: "Courier New", Courier, monospace;'>Gpa  Calculator</span>
+	  </nav>
+</head>
+<br><br>
+<body style="background: #c6e4a3;text-align: center;">
+
+    <form name="CGPAvalue">
+        <table class="container">
+            <tr class="row justify-content-center">
+                <td>Enter your CGPA</td>
+                <td><input type="number" step=".01" name="cgpa" id="cgpa" value="0"></td>
+                <td><button onclick="gpa()" class="gpa_submit_button">Check GPA</button></td>
+            </tr>
+        </table>
+    </form>
+       <div class="container">
+        <a href='index.html'><button class="back_to_home">Back to Homepage</button></a>
+    </div>
+    <script>
+        function gpa() {
+            var y = "";
+            var x = document.CGPAvalue.cgpa.value;
+            if (x >= 8.5)
+                y = "4"
+            if (x <= 8.4 && x >= 8.0)
+                y = "3.7"
+            if (x <= 7.9 && x >= 7.5)
+                y = "3.3";
+            if (x <= 7.4 && x >= 7.0)
+                y = "3.0";
+            if (x <= 6.9 && x >= 6.5)
+                y = "2.7";
+            if (x <= 6.4 && x >= 6.0)
+                y = "2.3";
+            if (x <= 5.9 && x >= 5.5)
+                y = "2.0";
+            if (x <= 5.4 && x >= 5.0)
+                y = "1.7";
+            if (x <= 4.9 && x >= 4.5)
+                y = "1.3";
+            if (x <= 4.4 && x >= 4.0)
+                y="1.0";
+            if (x <= 3.9 && x >= 0.0)
+                y='0';         
+            alert('Your expected GPA is ' + y);
+        }
+
+
+    </script>
+</body>
+
+</html>

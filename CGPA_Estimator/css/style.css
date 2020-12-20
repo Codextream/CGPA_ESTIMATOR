@@ -1,0 +1,148 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background: url("./../img/pexels-pixabay.jpg") no-repeat fixed;
+  background-size: cover;
+  background-position: top;
+  color: white;
+}
+
+.headtitle {
+  font-family: "Lato", sans-serif;
+  font-size: 5rem;
+  position: relative;
+  top: 1.5rem;
+  left: 3rem;
+  text-shadow: 2px 4px 7px #db880c;
+  display: inline-block;
+}
+th {
+  /* display: inline-block; */
+  text-align: center;
+}
+
+.main {
+  position: relative;
+  display: inline-block;
+  top: 20rem;
+  left: 50%;
+  text-align: left;
+  transform: translate(-50%, -40%);
+
+  border-style: solid;
+  padding: 20px;
+  padding-top: 3rem;
+  padding-left: 3.5rem;
+  box-sizing: border-box;
+  background-color: rgba(22, 22, 6, 0.623);
+  border-radius: 40px;
+  width: 37.5rem;
+  box-shadow: 7px 3px 30px 0px rgba(50, 50, 50, 0.49);
+}
+.btn {
+  background-color: #071113;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-top: 10px;
+  transform: translateX(160%);
+}
+.btn:hover {
+  background-color: white;
+  transform: translate(160%, -0.3rem);
+  box-shadow: 0.5rem 0.75rem 1rem rgba(209, 140, 36, 0.548);
+  color: black;
+}
+.btn:active {
+  background-color: white;
+  color: black;
+  transform: translate(162%, -0.15rem);
+  box-shadow: 0.2rem 0.3rem 0.75rem rgba(209, 140, 36, 0.452);
+}
+.textbox {
+  border-radius: 6px;
+  padding: 0.5px 5px;
+  margin: 3px;
+  margin-right: 25px;
+  margin-left: 30px;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 150px;
+  height: 22px;
+}
+.textbox:focus {
+  border-width: 2px;
+  width: 155px;
+  height: 25px;
+  margin-right: 5px;
+  margin-top: 0px;
+  transform: translateX(-2px);
+  box-shadow: 1px 4px 8px 3px rgba(209, 140, 36, 0.452);
+}
+#current_cg {
+  transform: translateX(42px);
+}
+#tpastcredits:focus {
+  margin-top: 0px;
+}
+
+@media (max-width: 900px) {
+  .headtitle {
+    font-size: 4rem;
+    text-align: center;
+    top: 1.5rem;
+    left: 3rem;
+  }
+}
+@media (max-width: 590px) {
+  .headtitle {
+    font-size: 4rem;
+    text-align: center;
+    top: 1.5rem;
+    left: 3vw;
+  }
+  .main {
+    transform: translate(-50%, -50%);
+  }
+}
+@media (pointer: none), (pointer: coarse) {
+  .main {
+    padding: 20px;
+    padding-top: 5rem;
+    padding-left: 6rem;
+    width: 50rem;
+    height: 80rem;
+    margin-top: 30vw;
+  }
+  .headtitle {
+    font-size: 7rem;
+    text-align: center;
+    margin-top: 5vh;
+  }
+  .textbox {
+    margin: 1rem;
+    margin-right: 25px;
+    margin-left: 7rem;
+    width: 10rem;
+    height: 2rem;
+  }
+  .textbox:focus {
+    margin: 1rem;
+    margin-right: 25px;
+    margin-left: 7rem;
+    width: 10rem;
+    height: 2.5rem;
+  }
+  .btn {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+}
+

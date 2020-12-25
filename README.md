@@ -24,7 +24,7 @@ Have a look at the issues and send a Pull Request accordingly
 ## Updates:
 
 Here is a list of present open issues:
-1. Make a similar web page for NCGPA and ACGPA calculation
+1. Make a similar web page for ACGPA calculation
 2. Design a favicon for the website
 3. Add a CSS Style sheet
 4. Separate the js stylesheet from index.html 
